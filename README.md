@@ -1,4 +1,4 @@
-# Reasoning Safety
+# Countdown-Code: A Testbed for Studying The Emergence and Generalization of Reward Hacking
 
 This repository contains the code and data for COUNTDOWN-CODE, a controlled environment designed to study how Reward Hacking (specification gaming) emerges during the post-training pipeline. We investigate how Supervised Fine-Tuning (SFT) acts as a catalyst, seeding latent misalignment that Reinforcement Learning (RL) then amplifies into overt cheating.
 
