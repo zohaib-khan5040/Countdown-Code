@@ -8,11 +8,11 @@ PROJECT_NAME="verl_reasoning_safety"
 TRAIN_PATH="${PROJECT_DIR}/data/sft/train.parquet"
 TEST_PATH="${PROJECT_DIR}/data/sft/test.parquet"
 
-MODEL_PATH="Qwen/Qwen2.5-Coder-7B-Instruct"
+MODEL_PATH="Qwen/Qwen2.5-Coder-3B-Instruct"
 EXPERIMENT_NAME="sft_qwen25_coder_7b_orig"
 
 if [ "$#" -lt 2 ]; then
-    echo "Usage: run_qwen2.5-coder-7b-lora.sh <nproc_per_node> <save_path> [other_configs...]"
+    echo "Usage: run_qwen2.5-coder-3b-lora.sh <nproc_per_node> <save_path> [other_configs...]"
     exit 1
 fi
 
@@ -38,9 +38,6 @@ torchrun --standalone --nnodes=1 --nproc_per_node=$nproc_per_node \
     trainer.experiment_name=$EXPERIMENT_NAME \
     trainer.logger=console \
     trainer.total_epochs=5 \
-    model.lora_rank=128 \
-    model.lora_alpha=128 \
-    model.target_modules=all-linear \
     model.strategy=fsdp \
     ulysses_sequence_parallel_size=2 \
     use_remove_padding=true \
