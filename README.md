@@ -224,12 +224,12 @@ This project builds on:
 If you use Countdown-Code in your research, please cite this work:
 
 ```bibtex
-@article{[AUTHOR_YEAR],
-      title={COUNTDOWN-CODE: Studying Specification Gaming in Post-Training},
-      author={[Authors]},
-      year={[YEAR]},
-      journal={[VENUE]},
-      url={[ARXIV_URL]},
+@article{countdowncode,
+      title={Countdown-Code: A Testbed for Studying The Emergence and Generalization of Reward Hacking in RLVR}, 
+      author={Muhammad Khalifa and Zohaib Khan and Omer Tafveez and Hao Peng and Lu Wang},
+      year={2026},
+      eprint={2603.07084},
+      archivePrefix={arXiv}
 }
 ```
 
