@@ -1,7 +1,7 @@
 # ⌛️ Countdown-Code: A Testbed for Studying The Emergence and Generalization of Reward Hacking
 
 <div align="center">
-  <a href="https://arxiv.org/abs/[ARXIV_ID]">
+  <a href="https://arxiv.org/abs/2603.07084">
     <img src="https://img.shields.io/badge/Paper-arXiv-red">
   </a>
   <a href="https://huggingface.co/datasets/Jiayi-Pan/Countdown-Tasks-3to4">
